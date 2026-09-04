@@ -1,0 +1,10 @@
+name: My First Robot
+
+on: push
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "The robot is alive and checking my code!"
