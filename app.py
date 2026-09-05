@@ -1,4 +1,10 @@
-def add(a, b):
-    return a + b
+from flask import Flask
 
-print("App says:", add(2, 3))
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "The robot is alive and serving a real webpage!"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
