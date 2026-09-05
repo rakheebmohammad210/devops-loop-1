@@ -11,3 +11,6 @@ jobs:
 
       - name: Run my app
         run: python3 app.py
+
+      - name: Build Docker image
+        run: docker build -t my-app .
