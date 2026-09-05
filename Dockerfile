@@ -1,3 +1,3 @@
 FROM python:3.11-slim
-   COPY appp.py .
+      COPY app.py .
 CMD ["python3", "app.py"]
