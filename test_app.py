@@ -4,4 +4,4 @@ def test_home_page():
     client = app.test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert b"robot is sleeping" in response.data
+    assert b"robot is alive" in response.data
